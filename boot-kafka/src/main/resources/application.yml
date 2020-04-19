@@ -1,0 +1,11 @@
+#kafka config
+spring:
+  kafka:
+    consumer:
+      group-id: foo
+      auto-offset-reset: latest
+    bootstrap-servers: 45.40.199.157:9092
+logging:
+  level:
+    org.boot.kafka.bootkafka: debug
+  path: logs

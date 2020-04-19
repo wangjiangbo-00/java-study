@@ -1,0 +1,199 @@
+2019-09-15 15:48:03.152  INFO 5852 --- [main] org.boot.kafka.bootkafka.MsgServiceTest  : Starting MsgServiceTest on SKY-20190612WKQ with PID 5852 (started by Administrator in D:\study\java\spring-learning\boot-kafka)
+2019-09-15 15:48:03.153 DEBUG 5852 --- [main] org.boot.kafka.bootkafka.MsgServiceTest  : Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+2019-09-15 15:48:03.153  INFO 5852 --- [main] org.boot.kafka.bootkafka.MsgServiceTest  : No active profile set, falling back to default profiles: default
+2019-09-15 15:48:03.224  INFO 5852 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6283d8b8: startup date [Sun Sep 15 15:48:03 CST 2019]; root of context hierarchy
+2019-09-15 15:48:04.018  INFO 5852 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$72c7a8d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-15 15:48:04.645  INFO 5852 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6283d8b8: startup date [Sun Sep 15 15:48:03 CST 2019]; root of context hierarchy
+2019-09-15 15:48:04.734  INFO 5852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/msg/test],methods=[POST]}" onto public java.lang.String org.boot.kafka.bootkafka.controller.MsgController.test()
+2019-09-15 15:48:04.735  INFO 5852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/msg/{content}]}" onto public java.lang.String org.boot.kafka.bootkafka.controller.MsgController.send(java.lang.String)
+2019-09-15 15:48:04.737  INFO 5852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-15 15:48:04.737  INFO 5852 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-15 15:48:04.767  INFO 5852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-15 15:48:04.768  INFO 5852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-15 15:48:04.804  INFO 5852 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-15 15:48:04.995  INFO 5852 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-09-15 15:48:05.016  INFO 5852 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [45.40.199.157:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = foo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-09-15 15:48:05.022  INFO 5852 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [45.40.199.157:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = foo
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-09-15 15:48:05.192  INFO 5852 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.2.0
+2019-09-15 15:48:05.192  INFO 5852 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 576d93a8dc0cf421
+2019-09-15 15:48:05.327  INFO 5852 --- [main] org.boot.kafka.bootkafka.MsgServiceTest  : Started MsgServiceTest in 2.696 seconds (JVM running for 4.179)
+2019-09-15 15:48:05.421  INFO 5852 --- [main] o.b.k.b.s.impl.KafkaProviderServiceImpl  : 开始发送消息...
+2019-09-15 15:48:05.431  INFO 5852 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [45.40.199.157:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-09-15 15:48:05.452  INFO 5852 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.2.0
+2019-09-15 15:48:05.452  INFO 5852 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : 576d93a8dc0cf421
+2019-09-15 15:48:05.759  WARN 5852 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 2 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:05.762  WARN 5852 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 1 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:05.969  WARN 5852 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 3 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:05.984  WARN 5852 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 4 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:06.344  WARN 5852 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 4 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:06.344  WARN 5852 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 6 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:06.498  WARN 5852 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 8 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:06.507  WARN 5852 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 5 : {myKafka=LEADER_NOT_AVAILABLE}
+2019-09-15 15:48:06.652  INFO 5852 --- [main] o.b.k.b.s.impl.KafkaProviderServiceImpl  : 消息发送完成
+2019-09-15 15:48:06.653  INFO 5852 --- [main] o.b.k.b.s.impl.KafkaProviderServiceImpl  : ---------------------------------
+2019-09-15 15:48:06.659  INFO 5852 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6283d8b8: startup date [Sun Sep 15 15:48:03 CST 2019]; root of context hierarchy
+2019-09-15 15:48:06.661  INFO 5852 --- [Thread-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2019-09-15 15:48:06.666  INFO 5852 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2019-09-15 15:48:06.668  INFO 5852 --- [Thread-2] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 30000 ms.

@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/test
+      username: root
+      authentication-database: root
+
+logging:
+  level:
+    org.boot: debug

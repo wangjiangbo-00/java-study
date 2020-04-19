@@ -1,0 +1,13 @@
+mybatis:
+  type-aliases-package: org.boot.mybatis.model
+  type-handlers-package: org.boot.mybatis.typehandler
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    username: Wjb998877.
+    url: jdbc:mysql://45.40.199.157:3306/test
